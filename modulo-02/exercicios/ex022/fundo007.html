@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /* O position relative faz com que o container seja o ponto de referencia para o conteudo, sem ele o conteudo ficaria no topo da pagina */
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute; /* O position absolute faz com que o conteudo seja posicionado em relacao ao container, sem ele o conteudo ficaria no topo da pagina */
+            height: 200px;
+            width: 400px;
+            background-color: lightblue;
+
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* O transform translate faz com que o conteudo seja movido para o centro do container, sem ele o conteudo ficaria no topo da pagina*/
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        </article>
+    </section>
+    
+</body>
+</html>

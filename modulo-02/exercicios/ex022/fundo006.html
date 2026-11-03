@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 </head>
 <style>
     body {
         height: 100vh;
+        /* 
         background-color: black;
         background-image: url('imagens/wallpaper002.jpg');
         background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover; /* background-size: 100% 100% pessima solucao deixa a imagem distorcida, o contain faz com que a imagem seja 100% exibida mas cria espaços em branco, cover cobre 100% do contenedor mesmo que tenha que recortar a imagem */
+        background-repeat: repeat-y;
+       /* background-attachment: fixed;  (fixed faz com que a imagem fique fixa na tela, scroll faz com que a imagem se mova junto com o scroll)  */ 
+
+        
+
+        /*Shorthand - background
+        
+        color > image > position >  repeat > (size) na pratica o size não funciona > attachment
+
+        */
+
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+        background-size: cover; /*background-size: 100% 100% pessima solucao deixa a imagem distorcida, o contain faz com que a imagem seja 100% exibida mas cria espaços em branco, COVER cobre 100% do contenedor mesmo que tenha que recortar a imagem*/
     }
+
     main{
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border: 2px solid darkblue;
@@ -27,6 +40,8 @@
 
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto magnam repellendus illo sunt voluptatibus similique enim doloremque, nesciunt nemo voluptatem architecto distinctio, quasi fuga aliquam. Nobis voluptatum ex recusandae? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos doloribus ullam corrupti? Nesciunt magnam, vero ut quam soluta temporibus distinctio? Autem itaque excepturi accusantium nisi labore amet possimus blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis animi, quis dolorem eius consequatur ut, veniam cupiditate suscipit odit rem quasi! Magni veritatis voluptate voluptatem quasi inventore cum molestiae totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore ratione commodi, velit neque doloremque libero aliquid, amet repellendus est voluptates ut vero autem vitae tempore consectetur assumenda error. Cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolor soluta veritatis delectus accusamus totam vero quaerat nam. Est enim ullam hic ducimus quis, suscipit ea incidunt dolorem! Omnis, nihil?</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto magnam repellendus illo sunt voluptatibus similique enim doloremque, nesciunt nemo voluptatem architecto distinctio, quasi fuga aliquam. Nobis voluptatum ex recusandae? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos doloribus ullam corrupti? Nesciunt magnam, vero ut quam soluta temporibus distinctio? Autem itaque excepturi accusantium nisi labore amet possimus blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis animi, quis dolorem eius consequatur ut, veniam cupiditate suscipit odit rem quasi! Magni veritatis voluptate voluptatem quasi inventore cum molestiae totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore ratione commodi, velit neque doloremque libero aliquid, amet repellendus est voluptates ut vero autem vitae tempore consectetur assumenda error. Cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolor soluta veritatis delectus accusamus totam vero quaerat nam. Est enim ullam hic ducimus quis, suscipit ea incidunt dolorem! Omnis, nihil?</p>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto magnam repellendus illo sunt voluptatibus similique enim doloremque, nesciunt nemo voluptatem architecto distinctio, quasi fuga aliquam. Nobis voluptatum ex recusandae? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos doloribus ullam corrupti? Nesciunt magnam, vero ut quam soluta temporibus distinctio? Autem itaque excepturi accusantium nisi labore amet possimus blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis animi, quis dolorem eius consequatur ut, veniam cupiditate suscipit odit rem quasi! Magni veritatis voluptate voluptatem quasi inventore cum molestiae totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore ratione commodi, velit neque doloremque libero aliquid, amet repellendus est voluptates ut vero autem vitae tempore consectetur assumenda error. Cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolor soluta veritatis delectus accusamus totam vero quaerat nam. Est enim ullam hic ducimus quis, suscipit ea incidunt dolorem! Omnis, nihil?</p>
     </main>
     
